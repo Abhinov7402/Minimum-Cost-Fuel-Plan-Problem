@@ -1,0 +1,18 @@
+data; 
+set fltplan := KCID1 KACK KMMU KBNA KTUL KCID2;
+
+
+param:     FuelCost    RampFees    MinGaltoWaivFees    FuelBurn    passengers :=
+    KCID1     4           0            infinity         5100           2
+    KACK     8.32        800            600             2200           4
+    KMMU     8.99        750            500             4700           8
+    KBNA     6.48        600            650             3800           8
+    KTUL     9.27        800            500             3600           8
+    KCID2    4            0            infinity           0            0;
+    
+param MaxRampWeight = 36400;
+param MaxLandingWeight = 31800;
+param BOW = 22800;
+param FuelTankCapacity = 14000;
+param MinLandingFuel = 2500;
+param ReturnFuelLimit = 7000;
